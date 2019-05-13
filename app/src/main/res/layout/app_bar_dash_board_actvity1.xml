@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="@color/white"
+            app:cardUseCompatPadding="true"
+            android:elevation="4dp"
+            android:id="@+id/card_view_home"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+
+                      android:padding="@dimen/_10sdp"
+                      android:text="Pick up "
+                      android:textStyle="bold"
+                      android:textSize="@dimen/_15sdp"
+                      android:layout_gravity="center"
+                      android:textColor="@color/yellow"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+
+                      android:padding="@dimen/_10sdp"
+                      android:layout_centerVertical="true"
+                      android:textColor="@color/black"
+                      android:id="@+id/tv_pickup1"
+
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+
+                      android:padding="@dimen/_10sdp"
+                      android:layout_centerVertical="true"
+                      android:textColor="@color/black"
+                      android:id="@+id/tv_pickup2"
+
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+                      android:padding="@dimen/_10sdp"
+                      android:layout_centerVertical="true"
+                      android:textColor="@color/black"
+                      android:id="@+id/tv_pickup3"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+
+                      android:padding="@dimen/_10sdp"
+                      android:text="Drop off "
+                      android:textStyle="bold"
+                      android:textSize="@dimen/_15sdp"
+                      android:layout_gravity="center"
+                      android:textColor="@color/yellow"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+
+                      android:padding="@dimen/_10sdp"
+                      android:layout_centerVertical="true"
+                      android:textColor="@color/black"
+                      android:id="@+id/tv_drop1"
+
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+
+                      android:padding="@dimen/_10sdp"
+                      android:layout_centerVertical="true"
+                      android:textColor="@color/black"
+                      android:id="@+id/tv_drop2"
+
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+
+                      android:padding="@dimen/_10sdp"
+                      android:layout_centerVertical="true"
+                      android:textColor="@color/black"
+                      android:id="@+id/tv_drop3"
+
+                      android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "805471075856",
+    "firebase_url": "https://truckappuser.firebaseio.com",
+    "project_id": "truckappuser",
+    "storage_bucket": "truckappuser.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805471075856:android:33a4fef40e6076b7",
+        "android_client_info": {
+          "package_name": "com.truckintransit.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805471075856-55gtj7ca928qk2dggponb8otks81npci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAKmbmYRloe4m0QAyyEHQ_5akD46m8CQo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

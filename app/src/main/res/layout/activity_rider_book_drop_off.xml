@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+            <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardUseCompatPadding="true"
+                    android:elevation="4dp"
+                    android:visibility="gone"
+                    android:id="@+id/card_view_home"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+
+                    <TextView android:layout_width="wrap_content"
+                              android:text="1. Enter your first DropOff adress"
+                              android:padding="@dimen/_10sdp"
+                              android:layout_centerVertical="true"
+                              android:textColor="@color/black"
+                              android:id="@+id/tv_pickup1"
+
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:text="2. Enter your second DropOff adress(Optional)"
+                              android:padding="@dimen/_10sdp"
+                              android:layout_centerVertical="true"
+                              android:textColor="@color/black"
+                              android:id="@+id/tv_pickup2"
+
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:text="3. Enter your third DropOff adress(Optional)"
+                              android:padding="@dimen/_10sdp"
+                              android:layout_centerVertical="true"
+                              android:textColor="@color/black"
+                              android:id="@+id/tv_pickup3"
+
+                              android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardUseCompatPadding="true"
+                    android:elevation="4dp"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:layout_height="wrap_content">
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textColorHint="@color/textcolour"
+                            app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:inputType="text"
+                                android:id="@+id/et_kg"
+                                android:textColor="@color/textcolour"
+                                android:hint="Select Goods/Material Type Weight (KG’s)"
+                                android:backgroundTint="@color/edittext_line_colour"
+                                android:layout_height="wrap_content"
+                        />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textColorHint="@color/textcolour"
+                            app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:inputType="text"
+                                android:id="@+id/et_coupon"
+                                android:textColor="@color/textcolour"
+                                android:hint="Apply coupon"
+                                android:backgroundTint="@color/edittext_line_colour"
+                                android:layout_height="wrap_content"
+                        />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:text="Freight Payment"
+                              android:textColor="@color/black"
+                              android:textSize="@dimen/_15sdp"
+                              android:layout_marginTop="@dimen/_5sdp"
+                              android:layout_height="wrap_content"/>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="horizontal"
+                                  android:layout_marginTop="@dimen/_5sdp"
+                                  android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                                android:layout_width="wrap_content"
+                                android:text="Advance"
+                                android:textColor="@color/black"
+                                android:theme="@style/CheckBox"
+                                android:id="@+id/cb_advance"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                                android:layout_width="wrap_content"
+                                android:text="To pay"
+                                android:textColor="@color/black"
+                                android:theme="@style/CheckBox"
+                                android:id="@+id/cb_topay"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                                android:layout_width="wrap_content"
+                                android:text="Both"
+                                android:textColor="@color/black"
+                                android:theme="@style/CheckBox"
+                                android:id="@+id/cb_both"
+                                android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:text="Payment Mode"
+                              android:layout_marginTop="@dimen/_5sdp"
+                              android:textColor="@color/black"
+                              android:textSize="@dimen/_15sdp"
+                              android:layout_height="wrap_content"/>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="horizontal"
+                                  android:layout_marginTop="@dimen/_5sdp"
+                                  android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                                android:layout_width="wrap_content"
+                                android:text="Cash"
+                                android:textColor="@color/black"
+                                android:theme="@style/CheckBox"
+                                android:id="@+id/cb_cash"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                                android:layout_width="wrap_content"
+                                android:text="Paytm Wallet"
+                                android:textColor="@color/black"
+                                android:theme="@style/CheckBox"
+                                android:id="@+id/cb_paytm"
+                                android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                            android:layout_width="wrap_content"
+                            android:text="Use TIT Credits"
+                            android:textColor="@color/black"
+                            android:theme="@style/CheckBox"
+                            android:id="@+id/cb_helper"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_height="wrap_content"/>
+
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="horizontal"
+                                  android:layout_marginTop="@dimen/_10sdp"
+                                  android:layout_height="wrap_content">
+
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:text="Confirm Booking"
+                                  android:padding="@dimen/_10sdp"
+                                  android:textColor="@color/yellow"
+                                  android:id="@+id/tv_book"
+                                  android:textSize="@dimen/_15sdp"
+                                  android:textStyle="bold"
+                                  android:layout_height="wrap_content"/>
+
+                        <TextView android:layout_width="match_parent"
+                                  android:text="Cancel"
+                                  android:padding="@dimen/_10sdp"
+                                  android:textColor="@color/yellow"
+                                  android:id="@+id/tv_cancel"
+                                  android:gravity="end"
+                                  android:textSize="@dimen/_15sdp"
+                                  android:textStyle="bold"
+                                  android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

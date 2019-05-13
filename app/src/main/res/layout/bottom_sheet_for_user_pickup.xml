@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="#A4000000"
+              app:behavior_peekHeight="100dp"
+              app:layout_behavior="@string/bottom_sheet_behavior"
+              android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content"
+                   android:background="@drawable/ic_up_24dp"
+                   android:layout_centerInParent="true"
+                   android:id="@+id/iv_uparrow"
+                   android:contentDescription="@null"
+                   android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rv_vehicle"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:id="@+id/linearservices"
+                  android:visibility="gone"
+                  android:layout_marginStart="@dimen/_10sdp"
+                  android:layout_marginEnd="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_5sdp"
+                  android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:text="Select an Option:"
+                  android:textStyle="bold"
+                  android:textColor="@color/white"
+                  android:textSize="@dimen/_18sdp"
+                  android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="@dimen/_10sdp"
+                      android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:text="Helper"
+                    android:textColor="@color/white"
+                    android:theme="@style/CheckBox"
+                    android:id="@+id/cb_helper"
+                    android:textSize="@dimen/_15sdp"
+                    android:checked="true"
+                    android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:text="Labour"
+                    android:textColor="@color/white"
+                    android:theme="@style/CheckBox"
+                    android:textSize="@dimen/_15sdp"
+                    android:id="@+id/cb_labour"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="Body Type "
+                  android:textStyle="bold"
+                  android:textColor="@color/white"
+                  android:paddingTop="@dimen/_5sdp"
+                  android:paddingEnd="@dimen/_5sdp"
+                  android:paddingBottom="@dimen/_5sdp"
+                  android:id="@+id/tv_body_type"
+                  android:layout_marginTop="@dimen/_10sdp"
+                  android:paddingStart="@dimen/_10sdp"
+                  android:drawableEnd="@drawable/ic_down_24dp"
+                  android:background="@drawable/text_square"
+                  android:textSize="@dimen/_15sdp"
+                  android:layout_height="wrap_content"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="Fuel Type "
+
+                  android:textStyle="bold"
+                  android:textColor="@color/white"
+                  android:paddingTop="@dimen/_5sdp"
+                  android:paddingEnd="@dimen/_5sdp"
+                  android:paddingBottom="@dimen/_5sdp"
+                  android:paddingStart="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_10sdp"
+                  android:id="@+id/tv_fuel_type"
+                  android:drawableEnd="@drawable/ic_down_24dp"
+                  android:background="@drawable/text_square"
+                  android:textSize="@dimen/_15sdp"
+                  android:layout_height="wrap_content"/>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="Vehicle Type "
+                  android:textStyle="bold"
+                  android:textColor="@color/white"
+                  android:paddingTop="@dimen/_5sdp"
+                  android:paddingEnd="@dimen/_5sdp"
+                  android:layout_marginTop="@dimen/_10sdp"
+                  android:paddingBottom="@dimen/_5sdp"
+                  android:id="@+id/tv_vehicle_type"
+                  android:paddingStart="@dimen/_10sdp"
+                  android:drawableEnd="@drawable/ic_down_24dp"
+                  android:background="@drawable/text_square"
+                  android:textSize="@dimen/_15sdp"
+                  android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:id="@+id/linearselect"
+                  android:weightSum="2"
+                  android:visibility="gone"
+                  android:layout_margin="@dimen/_15sdp"
+                  android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:text="Book Now"
+                  android:background="@drawable/square"
+                  android:textSize="15sp"
+                  android:id="@+id/tv_book"
+                  android:paddingTop="10dp"
+                  android:layout_weight="1"
+                  android:paddingBottom="10dp"
+                  android:textAlignment="center"
+                  android:layout_gravity="center"
+                  android:paddingStart="20dp"
+                  android:paddingEnd="20dp"
+                  android:textStyle="bold"
+                  android:textAllCaps="true"
+                  android:textColor="#252525"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="Schdule "
+                  android:background="@drawable/square"
+                  android:textSize="15sp"
+                  android:paddingTop="10dp"
+                  android:paddingBottom="10dp"
+                  android:layout_gravity="center"
+                  android:paddingStart="20dp"
+                  android:textStyle="bold"
+                  android:layout_weight="1"
+                  android:textAllCaps="true"
+                  android:textAlignment="center"
+                  android:paddingEnd="20dp"
+                  android:textColor="#252525"
+                  android:layout_marginStart="20dp"
+                  android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
